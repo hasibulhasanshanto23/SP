@@ -513,7 +513,7 @@ input[type=text] {
   border: none;
   outline: none;
   width: 100%;
-  font-weight: 500;
+  font-weight: 600;
   /* opacity: 0.6; */
   color: #000000;
 }
@@ -591,6 +591,10 @@ input[type=text] {
   color: #000000;
   opacity:1;
 }
+.ptnew{
+  padding: 8px 3px!important;
+}
+
 
 
 
@@ -632,9 +636,41 @@ input[type=text] {
 }
 p{
   margin: 0;
+
+
 }
 .pop-hover:hover{
   color: #1882FF;
+}
+.passenger .dec{
+  border: 1px solid #BCBCBC;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.passenger .inc{
+  border: 1px solid #1882FF;
+  color: #1882FF;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.cabin-class{
+  transition:all 0.3s ease;
+}
+
+.cabin-class:hover{
+  background-color: #F5F5F5;
+  cursor: pointer;
+}
+
+.cabin-class-text{
+  color: #1882FF;
+  transition: none;
 }
 
 

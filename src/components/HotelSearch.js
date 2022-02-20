@@ -110,6 +110,8 @@ const HotelSearch = () => {
               </div>
             </div>
           </div>
+
+          
           <div className="col-md-4">
             <div className="border-col">
               <div style={{ padding: "11px 16px" }}>

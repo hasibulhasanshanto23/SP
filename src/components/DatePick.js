@@ -47,7 +47,8 @@ class DatePick extends Component{
             focused={this.state.focused} 
             onFocusChange={({ focused }) => this.setState({ focused })}
             noBorder
-            placeholder={this.date}           
+            placeholder={this.date} 
+             
 />
         )
     }

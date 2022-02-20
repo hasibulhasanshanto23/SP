@@ -88,10 +88,10 @@ function a11yProps(index) {
                <OneWay />
             </TabPanel>
             <TabPanel value={value} index={1}>
-               Item Two
+              Round Trip
             </TabPanel>
             <TabPanel value={value} index={2}>
-               Item Three
+             Multi-City
             </TabPanel>
          </Box>
       </div>
