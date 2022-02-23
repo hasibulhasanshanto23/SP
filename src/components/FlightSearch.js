@@ -1,20 +1,15 @@
 import * as React from "react";
 import { Box } from "@mui/system";
-import { Button, Grid, Typography } from "@mui/material";
+import {Typography } from "@mui/material";
 import { PropTypes } from "prop-types";
 import { Tabs, Tab } from "@mui/material";
-import TextField from "@mui/material/TextField";
-import Autocomplete from "@mui/material/Autocomplete";
-import { makeStyles } from '@mui/styles';
 import OneWay from './Oneway'
+import RoundTrip from "./RoundTrip";
+import MultiCity from "./MultiCity";
 
 
 
-const useStyles = makeStyles({
-   btnWrapper: {
-      textAlign: 'center'
-   }
-})
+
 
 function TabPanel(props) {
    const { children, value, index, ...other } = props;
@@ -56,17 +51,7 @@ function a11yProps(index) {
       setValue(newValue);
    };
 
-   const top100Films = [
-      { label: "The Shawshank Redemption", year: 1994 },
-      { label: "The Godfather", year: 1972 },
-      { label: "The Godfather: Part II", year: 1974 },
-      { label: "The Dark Knight", year: 2008 },
-      { label: "12 Angry Men", year: 1957 },
-      { label: "Schindler's List", year: 1993 },
-      { label: "Pulp Fiction", year: 1994 }
-   ];
-
-   const classes = useStyles();
+  
 
 
    return (
@@ -88,10 +73,10 @@ function a11yProps(index) {
                <OneWay />
             </TabPanel>
             <TabPanel value={value} index={1}>
-              Round Trip
+              <RoundTrip/>
             </TabPanel>
             <TabPanel value={value} index={2}>
-             Multi-City
+             <MultiCity/>
             </TabPanel>
          </Box>
       </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Grid} from "@mui/material";
+import {Grid} from "@mui/material";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import moment from "moment";
@@ -7,8 +7,11 @@ import "../flight.scss";
 import DatePick from "./DatePick";
 import Popover from "@mui/material/Popover";
 
-const dayName = moment().format("dddd");
-const Oneway = () => {
+const RoundTrip = () => {
+
+
+ const dayName=moment().format('dddd')
+
   const [anchorEl, setAnchorEl] = useState(null);
   const [fromValue, setFromValue] = useState(null);
   const [toValue, setToValue] = useState(null);
@@ -31,6 +34,8 @@ const Oneway = () => {
     setInfant(0)
   }
 
+ 
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -42,23 +47,25 @@ const Oneway = () => {
   const open = Boolean(anchorEl);
   const id = open ? "simple-popover" : undefined;
 
-  const from = [
-    { label: "DAC" },
-    { label: "DAX" },
-    { label: "SLK" },
-    { label: "CGP" },
-    { label: "CCU" },
-    { label: "CXB" },
-    { label: "BKK" },
-  ];
 
 
 
+
+    const from = [
+        { label: "DAC" },
+        { label: "DAX" },
+        { label: "SLK" },
+        { label: "CGP" },
+        { label: "CCU" },
+        { label: "CXB" },
+        { label: "BKK" },
+      ];
 
   return (
-    <form>
+    <>
+     <form>
       <Grid container>
-        <Grid item sm={12} md={3} sx={{ mb: 3 }}>
+        <Grid item sm={12} md={2.9} sx={{ mb: 3 }}>
           <div className="inputField flyFrom">
             <span className="labelTxt">Flying From</span>
 
@@ -78,8 +85,9 @@ const Oneway = () => {
             </div>
           </div>
         </Grid>
-        <Grid item sm={12} md={3} sx={{ mb: 3 }}>
-          <div className="inputField flyTo">
+        
+        <Grid item sm={12} md={2.8} sx={{ mb: 3 }}>
+          <div className="inputField flyTo" >
             <span className="labelTxt">Flying To</span>
 
             <Autocomplete
@@ -98,7 +106,7 @@ const Oneway = () => {
           </div>
         </Grid>
 
-        <Grid item sm={12} md={3} sx={{ pl: 1, mb: 3 }}>
+        <Grid item sm={12} md={1.7} sx={{ pl: 1, mb: 3 }}>
           <Grid>
             <div className="border-col">
               <div
@@ -127,6 +135,40 @@ const Oneway = () => {
           </Grid>
         </Grid>
 
+
+
+        <Grid item sm={12} md={1.6} sx={{mb: 3 }}>
+          <Grid>
+            <div className="border-col">
+              <div
+                className="placeholder-text ptnew"
+                style={{ padding: "13px 0" }}
+              >
+                <span
+                  style={{
+                    paddingLeft: "22px",
+                    fontSize: "12px",
+                    display: "block",
+                    marginBottom: "5px",
+                  }}
+                >
+                  Select Date
+                </span>
+                <div style={{ paddingLeft: "12px" }}>
+                  <DatePick />
+                </div>
+                <span style={{ fontSize: "12px", paddingLeft: "20px" }}>
+                  <strong>2022,</strong>
+                  <span style={{ opacity: "0.6" }}>{dayName}</span>
+                </span>
+              </div>
+            </div>
+          </Grid>
+        </Grid>
+
+
+        
+
         <Grid item sm={12} md={3} sx={{ pl: 1, mb: 3 }}>
           <div className="border-col">
             <div style={{ padding: "8px 16px" }}>
@@ -142,10 +184,9 @@ const Oneway = () => {
                     margin: "0",
                     cursor: "pointer",
                     fontWeight: "600",
-                    fontSize:'18px'
                   }}
                 >
-                  {adult} Person
+                  1 Person
                 </h6>
               </div>
 
@@ -341,7 +382,8 @@ const Oneway = () => {
         </a>
       </div>
     </form>
-  );
-};
+    </>
+  )
+}
 
-export default Oneway;
+export default RoundTrip

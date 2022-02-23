@@ -96,8 +96,8 @@ p {
 
    .MuiButtonBase-root {
       min-height: unset;
-      padding: 11px 29px !important;
-      min-width: 132px;
+      padding: 13px 29px !important;
+      min-width: 136px !important;
       font-size: 14px;
       font-weight: 500;
       opacity: .7;
@@ -132,6 +132,7 @@ p {
 .inputField {
    position: relative;
    overflow: hidden;
+
 
    &.flyFrom {
     .MuiOutlinedInput-root {
