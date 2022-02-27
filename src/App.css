@@ -683,22 +683,13 @@ p{
    background-color: #EFF6FF;
 }
 
-@media only screen and (max-width:530px) {
-
-  .MuiButtonBase-root {
-    min-height: unset;
-    padding: 5px 5px !important;
-    min-width: 50px !important;
-    font-size: 14px;
-    font-weight: 500;
-  
+@media only screen and (max-width:630px) {
+  .MuiButtonBase-root{
+     padding: 8px 0px !important;
   }
-
   .MuiButtonBase-root img {
-    margin-right: 1px;
-    margin-top: 3px;
-}
-  
+    margin-right: 3px
+} 
 }
 
 
