@@ -9,16 +9,12 @@ import hotelmono from "../images/hotel-mono.svg";
 import holidaymono from "../images/holiday-mono.svg";
 import visamono from "../images/visa-mono.svg";
 import "react-dates/initialize";
-import moment from "moment";
 import "react-dates/lib/css/_datepicker.css";
 import "../App.css";
 import '../flight.scss'
-import DatePick from "../components/DatePick";
-import { borderRight } from "@mui/system";
 import HotelSearch from "./HotelSearch";
 import HolidaySearch from "./HolidaySearch";
 import VisaSearch from "./VisaSearch";
-import banner from '../images/banner.png'
 import FlightSearch from "./FlightSearch";
 const HomeSearchPanel = () => {
   const [data, setData] = useState("flight");

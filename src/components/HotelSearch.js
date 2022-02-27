@@ -13,6 +13,7 @@ const dayName = moment().format("dddd");
   if(adult<1){
     setAdult(1)
   }
+  
   if(child<0){
     setChild(0)
   }
