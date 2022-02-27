@@ -279,6 +279,71 @@ p {
 }
 }
 
+
+@media only screen and (max-width: 530px) {
+
+
+   .flightSearch {
+      .MuiTabs-flexContainer {
+         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+         border-radius: 24px;
+         position: relative;
+         width: -webkit-fit-content;
+         width: -moz-fit-content;
+         width: fit-content;
+         min-height: 25px;
+         margin: 10px auto 32px !important;
+         background-color: var(--color-white);
+         overflow: hidden;
+      }
+   
+         .MuiButtonBase-root {
+         z-index: 2;
+         min-height: 40px !important;
+         flex-grow: 1;
+         max-width: 100%;
+         min-width: auto;
+         font-size: 14px !important;
+         font-weight: 500;
+       } 
+   
+      .MuiButtonBase-root {
+         min-height: unset;
+         padding: 5px 10px !important;
+         min-width: 50px !important;
+         font-size: 14px;
+         font-weight: 500;
+         opacity: .7;
+   
+         &:focus {
+            background-color: #ffffff !important;
+            opacity: .2;
+         }
+      }
+   
+      .MuiButtonBase-root.Mui-selected {
+         background-color: #1882FF !important;
+         color: #fff !important;
+         opacity: 1;
+   
+         &:first-child {
+            border-radius: 24px 0 0 24px;
+         }
+   
+         &:last-child {
+            border-radius: 0 24px 24px 0;
+         }
+      }
+   
+      .MuiBox-root .css-19kzrtu{
+         padding: 0px 0px; 
+      }
+   }
+   
+  
+   
+}
+
 .dateplaceholder .DateInput{
    width: 113px !important;
 }
@@ -288,5 +353,12 @@ p {
 .dateplaceholder-visa .DateInput{
    width: 118px !important;
 }
+
+
+
+
+
+
+
 
 
