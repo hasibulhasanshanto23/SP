@@ -261,3 +261,32 @@ p {
  }
 
 
+
+
+
+@media only screen and (max-width: 899px) {
+    .MuiGrid-root {
+    padding: 0px !important;
+    margin: 0px ;
+ }
+}
+
+
+@media only screen and (max-width: 1199px) {
+   .dateplaceholder .MuiGrid-root {
+   padding: 0px !important;
+  
+}
+}
+
+.dateplaceholder .DateInput{
+   width: 113px !important;
+}
+.dateplaceholder-hotels .DateInput{
+   width: 118px;
+}
+.dateplaceholder-visa .DateInput{
+   width: 118px !important;
+}
+
+

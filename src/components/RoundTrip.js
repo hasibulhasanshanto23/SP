@@ -64,8 +64,8 @@ const RoundTrip = () => {
   return (
     <>
      <form>
-      <Grid container>
-        <Grid item sm={12} md={2.9} sx={{ mb: 3 }}>
+      <Grid container className="dateplaceholder">
+        <Grid item sm={12} md={12} xs={12}  lg={2.9} sx={{ mb: 3 }}>
           <div className="inputField flyFrom">
             <span className="labelTxt">Flying From</span>
 
@@ -86,7 +86,7 @@ const RoundTrip = () => {
           </div>
         </Grid>
         
-        <Grid item sm={12} md={2.8} sx={{ mb: 3 }}>
+        <Grid item sm={12} md={12} xs={12} lg={2.9} sx={{ mb: 3 }}>
           <div className="inputField flyTo" >
             <span className="labelTxt">Flying To</span>
 
@@ -106,7 +106,7 @@ const RoundTrip = () => {
           </div>
         </Grid>
 
-        <Grid item sm={12} md={1.7} sx={{ pl: 1, mb: 3 }}>
+        <Grid item sm={12} xs={6} md={6} lg={1.7} sx={{ pl: 1, mb: 3 }}>
           <Grid>
             <div className="border-col">
               <div
@@ -137,7 +137,7 @@ const RoundTrip = () => {
 
 
 
-        <Grid item sm={12} md={1.6} sx={{mb: 3 }}>
+        <Grid item sm={12} xs={6} md={6} lg={1.7} sx={{mb: 3 }}>
           <Grid>
             <div className="border-col">
               <div
@@ -169,7 +169,7 @@ const RoundTrip = () => {
 
         
 
-        <Grid item sm={12} md={3} sx={{ pl: 1, mb: 3 }}>
+        <Grid item sm={12} xs={12} md={12} lg={2.8} sx={{ pl: 1, mb: 3 }}>
           <div className="border-col">
             <div style={{ padding: "8px 16px" }}>
               <label style={{ paddingLeft: "8px", fontSize: "12px" }}>

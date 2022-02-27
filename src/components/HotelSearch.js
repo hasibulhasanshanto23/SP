@@ -5,7 +5,7 @@ import Popover from "@mui/material/Popover";
 
 const dayName = moment().format("dddd");
 
-const HotelSearch = () => {
+  const HotelSearch = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [adult,setAdult]=useState(1)
   const [child,setChild]=useState(0)
@@ -31,8 +31,8 @@ const HotelSearch = () => {
   return (
     <>
       <div>
-        <div className="row">
-          <div className="col-md-4">
+        <div className="row dateplaceholder-hotels">
+          <div className="col-sm-12 col-md-6 col-lg-4 mb-md-3 mb-sm-3 mb-3">
             <div className="border-col">
               <div style={{ padding: "8px 16px" }}>
                 <label style={{ paddingLeft: "12px", fontSize: "12px" }}>
@@ -56,7 +56,7 @@ const HotelSearch = () => {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-md-6 col-sm-12 col-lg-5 mb-md-3 mb-sm-3 mb-3">
             <div className="border-col">
               <div className="d-flex">
                 <div
@@ -64,7 +64,7 @@ const HotelSearch = () => {
                   style={{
                     padding: "13px 0",
                     width: "50%",
-                    borderRight: "1px solid #E2E2E8",
+                    borderRight: "1px solid #E2E2E8"
                   }}
                 >
                   <span
@@ -112,7 +112,7 @@ const HotelSearch = () => {
           </div>
 
           
-          <div className="col-md-4">
+          <div className="col-sm-12 col-md-6 col-lg-3 mb-md-3 mb-sm-3">
             <div className="border-col">
               <div style={{ padding: "11px 16px" }}>
                 <label style={{ paddingLeft: "12px", fontSize: "12px" }}>

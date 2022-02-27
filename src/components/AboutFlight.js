@@ -74,7 +74,7 @@ const AboutFlight = () => {
             fontSize:'18px'}}>Track Visa Application Status</h5>
             <TextField id="outlined-basic" label="ST Ref.No." variant="outlined" size='small' style={{width:'200px'}} />
             <ThemeProvider theme={theme}>
-           <Button variant='contained' style={{fontSize:'13px',
+           <Button variant='contained'  style={{fontSize:'13px',
            fontFamily:'Inter',
            width:'20px',
            height:'38px',

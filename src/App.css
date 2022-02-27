@@ -674,6 +674,15 @@ p{
   transition: none;
 }
 
+.myInput{
+  width: 50% !important;
+}
+
+.visa-travel-border:hover{
+   border: 1px solid #D1E5FF;
+   background-color: #EFF6FF;
+}
+
 
 
 

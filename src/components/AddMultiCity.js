@@ -5,7 +5,7 @@ import Autocomplete from "@mui/material/Autocomplete";
 import moment from "moment";
 import "../flight.scss";
 import DatePick from "./DatePick";
-import Popover from "@mui/material/Popover";
+
 
 const AddMultiCity = () => {
    
@@ -44,7 +44,7 @@ const AddMultiCity = () => {
 
   return (
     <Grid container>
-      <Grid item sm={12} md={4} sx={{ mb: 3 }}>
+      <Grid item sm={12} xs={12} md={4} sx={{ mb: 3 }}>
         <div className="inputField flyFrom">
           <span className="labelTxt">Flying From</span>
 
@@ -64,7 +64,7 @@ const AddMultiCity = () => {
           </div>
         </div>
       </Grid>
-      <Grid item sm={12} md={4} sx={{ mb: 3 }}>
+      <Grid item sm={12} xs={12}  md={4} sx={{ mb: 3 }}>
         <div className="inputField flyTo">
           <span className="labelTxt">Flying To</span>
 
@@ -85,7 +85,7 @@ const AddMultiCity = () => {
       </Grid>
 
       
-      <Grid item sm={12} md={4} sx={{ pl: 1, mb: 3 }}>
+      <Grid item sm={12} xs={12} md={4} sx={{ pl: 1, mb: 3 }}>
           <Grid>
             <div className="border-col">
               <div

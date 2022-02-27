@@ -9,15 +9,15 @@ const VisaSearch = () => {
     }
   return (
     <>
-   <div>
-                <div className="row">
-                  <div className="col-md-4">
+               <div>
+                <div className="row dateplaceholder-visa">
+                  <div className="col-md-12 col-sm-12 col-lg-4 mb-md-3 mb-sm-3 mb-3">
                     <div className="border-col">
                       <div style={{ padding: "10px 0px" }}>
                         <span
                           style={{
                             fontSize: "12px",
-                            display: "block",
+                            // display: "block",
                             paddingLeft: "20px",
                             display: "inline-block",
                           }}
@@ -47,7 +47,7 @@ const VisaSearch = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-4">
+                  <div className="col-md-12 col-sm-12 col-lg-4 mb-md-3 mb-sm-3 mb-3">
                     <div className="border-col">
                       <div className="d-flex">
                         <div
@@ -94,7 +94,7 @@ const VisaSearch = () => {
                     </div>
                   </div>
 
-                  <div className="col-md-4">
+                  <div className="col-md-12 col-sm-12 col-lg-4 ">
                     <div className="border-col">
                       <div className="d-flex">
                         <div
@@ -107,7 +107,7 @@ const VisaSearch = () => {
                             <span
                               style={{
                                 fontSize: "12px",
-                                display: "block",
+                                // display: "block",
                                 paddingLeft: "20px",
                                 display: "inline-block",
                               }}
@@ -180,11 +180,12 @@ const VisaSearch = () => {
                                 <div
                                   onClick={() => setTraveller(travller - 1)}
                                   style={{
-                                    padding: "4px 10px",
+                                    padding: "3px 6px",
                                     backgroundColor: "#fff",
                                     borderRadius: "16px 0 0 16px",
                                     boxShadow: "0 1px 3px rgb(0 0 0 / 10%",
                                   }}
+                                  className='visa-travel-border'
                                 >
                                   <span>
                                     <i className="mdi mdi-minus"></i>
@@ -193,11 +194,12 @@ const VisaSearch = () => {
                                 <div
                                   onClick={() => setTraveller(travller + 1)}
                                   style={{
-                                    padding: "4px 10px",
+                                    padding: "3px 6px",
                                     backgroundColor: "#fff",
                                     borderRadius: "0px 16px 16px 0px",
                                     boxShadow: "0 1px 3px rgb(0 0 0 / 10%",
                                   }}
+                                  className='visa-travel-border'
                                 >
                                   <span>
                                     <i className="mdi mdi-plus"></i>

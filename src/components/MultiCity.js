@@ -60,8 +60,8 @@ const MultiCity = () => {
 
   return (
     <><form>
-    <Grid container>
-      <Grid item sm={12} md={3} sx={{ mb: 3 }}>
+    <Grid container className="dateplaceholder">
+      <Grid item sm={12} xs={12} md={6} lg={3} sx={{ mb: 3 }}>
         <div className="inputField flyFrom">
           <span className="labelTxt">Flying From</span>
 
@@ -81,7 +81,7 @@ const MultiCity = () => {
           </div>
         </div>
       </Grid>
-      <Grid item sm={12} md={3} sx={{ mb: 3 }}>
+      <Grid item sm={12} xs={12} md={6} lg={3} sx={{ mb: 3 }}>
         <div className="inputField flyTo">
           <span className="labelTxt">Flying To</span>
 
@@ -101,7 +101,7 @@ const MultiCity = () => {
         </div>
       </Grid>
 
-      <Grid item sm={12} md={3} sx={{ pl: 1, mb: 3 }}>
+      <Grid item sm={12} xs={12} md={6} lg={3} sx={{ pl: 1, mb: 3 }}>
         <Grid>
           <div className="border-col">
             <div
@@ -130,7 +130,7 @@ const MultiCity = () => {
         </Grid>
       </Grid>
 
-      <Grid item sm={12} md={3} sx={{ pl: 1, mb: 3 }}>
+      <Grid item sm={12} xs={12} md={6} lg={3} sx={{ pl: 1, mb: 3 }}>
         <div className="border-col">
           <div style={{ padding: "8px 16px" }}>
             <label style={{ paddingLeft: "8px", fontSize: "12px" }}>
@@ -339,12 +339,12 @@ const MultiCity = () => {
       </Grid>
     </Grid>
    
-     <Grid container>
-         <Grid item sm={12} md={9} >
+     <Grid container className="dateplaceholder">
+         <Grid item xs={12} sm={12} md={12} lg={9} >
           <AddMultiCity/>
          </Grid>
 
-         <Grid item sm={12} md={3} sx={{pl:2}}>
+         <Grid item  xs={12} sm={12} md={3} sx={{pl:2}}>
           <div className="d-flex align-items-center" style={{minHeight:'85px'}}>
               <div>
                   <a href="#hh" className="add-city-btn"> <i className="mdi mdi-plus"></i> ADD CITY</a>

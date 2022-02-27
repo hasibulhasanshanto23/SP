@@ -57,8 +57,8 @@ const Oneway = () => {
 
   return (
     <form>
-      <Grid container>
-        <Grid item sm={12} md={3} sx={{ mb: 3 }}>
+      <Grid container className="dateplaceholder">
+        <Grid item sm={12} md={6} lg={3} xs={12} sx={{ mb: 3 }}>
           <div className="inputField flyFrom">
             <span className="labelTxt">Flying From</span>
 
@@ -78,7 +78,7 @@ const Oneway = () => {
             </div>
           </div>
         </Grid>
-        <Grid item sm={12} md={3} sx={{ mb: 3 }}>
+        <Grid item sm={12} md={6} lg={3} xs={12} sx={{ mb: 3 }}>
           <div className="inputField flyTo">
             <span className="labelTxt">Flying To</span>
 
@@ -98,8 +98,8 @@ const Oneway = () => {
           </div>
         </Grid>
 
-        <Grid item sm={12} md={3} sx={{ pl: 1, mb: 3 }}>
-          <Grid>
+        <Grid item sm={12} md={6} lg={3} xs={12} sx={{ pl: 1, mb: 3 }}>
+        
             <div className="border-col">
               <div
                 className="placeholder-text ptnew"
@@ -124,10 +124,10 @@ const Oneway = () => {
                 </span>
               </div>
             </div>
-          </Grid>
+          
         </Grid>
 
-        <Grid item sm={12} md={3} sx={{ pl: 1, mb: 3 }}>
+        <Grid item sm={12} md={6} lg={3} xs={12} sx={{ pl: 1, mb: 3 }}>
           <div className="border-col">
             <div style={{ padding: "8px 16px" }}>
               <label style={{ paddingLeft: "8px", fontSize: "12px" }}>

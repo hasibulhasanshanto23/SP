@@ -12,16 +12,10 @@ class DatePick extends Component{
         this.date=moment().format("Do MMM YY");
         this.state.startDate=moment().format("Do MMM YY")
         this.state.endDate=moment().format("Do MMM YY")
-
-        
-        this.new_date = moment().add(7, 'days').format('Do MMM YY');
-        //console.log(this.new_date)
-   
+        this.state.onlyDay=moment().format('dddd')             
+        this.new_date = moment().add(7, 'days').format('Do MMM YY');  
     }
-
-
-
-    
+   
 
     render(){
         return(
@@ -31,7 +25,8 @@ class DatePick extends Component{
             focused={this.state.focused} 
             onFocusChange={({ focused }) => this.setState({ focused })}
             noBorder
-            placeholder={this.props.addDays ? this.new_date : this.date}             
+            placeholder={this.props.addDays ? this.new_date : this.date}  
+                     
 />
         )
     }
