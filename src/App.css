@@ -442,7 +442,7 @@ ul.slick-dots{
 
      .MuiButtonBase-root {
       z-index: 2;
-      min-height: 50px !important;
+      min-height: 40px !important;
       flex-grow: 1;
       max-width: 100%;
       min-width: auto;
@@ -681,6 +681,24 @@ p{
 .visa-travel-border:hover{
    border: 1px solid #D1E5FF;
    background-color: #EFF6FF;
+}
+
+@media only screen and (max-width:530px) {
+
+  .MuiButtonBase-root {
+    min-height: unset;
+    padding: 5px 5px !important;
+    min-width: 50px !important;
+    font-size: 14px;
+    font-weight: 500;
+  
+  }
+
+  .MuiButtonBase-root img {
+    margin-right: 1px;
+    margin-top: 3px;
+}
+  
 }
 
 

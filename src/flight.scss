@@ -35,7 +35,7 @@ p {
 
    .MuiButtonBase-root {
       background-color: transparent;
-      min-height: 52px;
+      min-height: 152px;
       color: var(--color-black);
       opacity: .7;
       font-weight: 600;
@@ -260,6 +260,16 @@ p {
 
  }
 
+ .dateplaceholder .DateInput{
+   width: 113px !important;
+}
+.dateplaceholder-hotels .DateInput{
+   width: 118px;
+}
+.dateplaceholder-visa .DateInput{
+   width: 118px !important;
+}
+
 
 
 
@@ -344,15 +354,7 @@ p {
    
 }
 
-.dateplaceholder .DateInput{
-   width: 113px !important;
-}
-.dateplaceholder-hotels .DateInput{
-   width: 118px;
-}
-.dateplaceholder-visa .DateInput{
-   width: 118px !important;
-}
+
 
 
 
