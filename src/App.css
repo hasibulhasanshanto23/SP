@@ -683,12 +683,12 @@ p{
    background-color: #EFF6FF;
 }
 
-@media only screen and (max-width:630px) {
+@media only screen and (max-width:830px) {
   .MuiButtonBase-root{
      padding: 8px 0px !important;
   }
   .MuiButtonBase-root img {
-    margin-right: 3px
+    margin-right: 3px !important;
 } 
 }
 
