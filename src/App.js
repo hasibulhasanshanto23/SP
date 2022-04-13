@@ -12,7 +12,7 @@ function App() {
   return (
     <Container>
       <div className="main">
-        {/* <AccordionLayout
+        <AccordionLayout
           title="Price Range"
           semiTitle={
             <>
@@ -21,11 +21,12 @@ function App() {
             </>
           }
           com={<PriceRange />}
-        /> */}
+        />
 
         <AccordionLayout
-          title
-          com={<FlightSchedule/>}
+          reset
+          title="Flight Schedule"
+          com={<FlightSchedule />}
         />
       </div>
     </Container>
