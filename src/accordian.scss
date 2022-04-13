@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #E2E8F0;
+}
+
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-white-2: #e2e2e8;
+  --color-white-3: #fafafa;
+  --color-blue-main: #1882ff;
+  --color-gray: gray;
+  --color-gray-light: #4c4c4c;
+  --color-gray-lightPro:#E5E5E5;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.main{
+  margin: 20px 0;
+}
+
+.accordion{
+  margin-bottom: 20px;
+  .css-1elwnq4-MuiPaper-root-MuiAccordion-root{
+    box-shadow: none;
+    border-radius: 7px !important;
+    // opacity: 0.7;
+    .css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
+      margin: 15px 0;
+    }
+    .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded{
+       min-height: 50px;
+    }
+    .css-15v22id-MuiAccordionDetails-root{
+      padding: 16px 16px 16px;
+    }
+  }
+  &__title{
+    font-weight: 700 !important;
+    color: var(--color-black);
+    font-size: 18px !important;
+  }
+  &__details{
+    border-top: 1px solid var(--color-gray-lightPro);
+  }
+  &__semiTitle{
+    opacity: 0.7;
+    font-size: 14px !important;
+  }
+  &__slider{
+     opacity: 1;
+  }
+  &__slider{
+    padding: 0 10px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .css-eg0mwd-MuiSlider-thumb{
+      background-color: var(--color-white);
+      width: 25px;
+      height: 25px;
+      box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+    .css-1gv0vcd-MuiSlider-track{
+      height: 7px;
+      background-color: var(--color-blue-main);
+    }
+    .css-14pt78w-MuiSlider-rail{
+      height: 7px;
+    }
+  }
+  &__sliderAmount{
+    font-size: 14px;
+    opacity: 0.9;
+  }
+}
+
+
+.flightSchedule{
+  border: 1px solid #EAEEF4;
+  border-radius: 6px;
+
+  &__container{
+    padding: 2px;
+    border-radius:4px;
+  }
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
+    min-width: 50%;
+    text-transform: capitalize;
+    background-color: #F5F7FA;
+    font-weight: 600;
+    color: var(--color-black)
+  }
+  .css-jpln7h-MuiTabs-scroller{
+    border-radius: 6px;
+  }
+  
+  .Mui-selected{
+    background-color: #D4E8FF;
+    font-weight: 600;
+    color: #1882ff !important;
+    margin-right: 2px;
+  }
+}
+
